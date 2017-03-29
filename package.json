@@ -1,0 +1,22 @@
+{
+  "name": "matt-calthrop-cv",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:mcalthrop/matt-calthrop-cv.git",
+  "engines": {
+    "node": "6.8.0",
+    "npm": ">= 3"
+  },
+  "scripts": {
+    "start": "node server",
+    "nodemon": "nodemon server.js",
+    "test": "echo 'No tests written'; exit 1"
+  },
+  "author": "Matt Calthrop <mcalthrop@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "skeleton-css": "^2.0.4"
+  }
+}
