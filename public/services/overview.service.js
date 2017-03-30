@@ -1,6 +1,4 @@
 function OverviewService($http) {
-  console.log('OverviewService');
-
   return {
     get: function () {
       return $http({

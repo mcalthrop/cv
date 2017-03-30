@@ -1,6 +1,4 @@
 function WorkHistoryService($http) {
-  console.log('WorkHistoryService');
-
   return {
     get: function () {
       return $http({
