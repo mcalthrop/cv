@@ -1,0 +1,24 @@
+[
+  {
+    "roleTitle": "Senior Front-end Consultant",
+    "employer": "OpenCredo",
+    "date": {
+      "from": "Apr 2013",
+      "to": "Sep 2016"
+    },
+    "location": "London, UK",
+    "skillSummary": [
+      "AngularJS, Bootstrap",
+      "Grunt, Karma, Protractor, LESS CSS3, HTML5",
+      "git, IntelliJ, Jenkins",
+      "responsive web dev"
+    ],
+    "description": [
+      "Implemented several AngularJS/Twitter Bootstrap SPAs.",
+      "Wrote comprehensive Grunt scripts for the build process, including JSHint, JSCS, LESS compilation, unit (Karma) and e2e (Protractor) testing",
+      "Worked closely with API developers to define and agree REST API contracts",
+      "Developed a service-mocking app in ExpressJS to allow stackless development",
+      "Involved in daily client interaction, and presented weekly client updates"
+    ]
+  }
+]
