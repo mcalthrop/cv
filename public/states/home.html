@@ -1,6 +1,18 @@
 <h1>Matt Calthrop: CV</h1>
 
-<h2>Overview</h2>
+<div ng-controller="OverviewController as overview">
+  <div class="row">
+    <div class="three columns">
+      <h2>Overview</h2>
+    </div>
+    <div class="nine columns">
+      <div class="overview">
+        <p ng-repeat="para in overview.data">{{ para }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <div ng-controller="WorkHistoryController as workHistory">
 
