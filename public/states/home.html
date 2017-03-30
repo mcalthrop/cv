@@ -6,43 +6,29 @@
 
   <h2>Work History</h2>
 
-  <code>
-    {{ workHistory.data }}
-  </code>
-
-  <div>
+  <div ng-repeat="item in workHistory.data" class="work-history">
 
     <div class="row">
-      <div class="three columns history-heading">Apr 2013 &ndash; Sep 2016</div>
-      <div class="seven columns history-heading">OpenCredo</div>
-      <div class="two columns history-heading">London, UK</div>
-    </div>
-
-    <div class="row">
-      <div class="three columns">&nbsp;</div>
-      <div class="nine columns">Senior Front-end Consultant</div>
-    </div>
-
-    <div class="row">
-      <div class="three columns history-left">
-        <ul>
-          <li>AngularJS, Bootstrap</li>
-          <li>Grunt, Karma, Protractor, LESS CSS3, HTML5</li>
-          <li>git, IntelliJ, Jenkins</li>
-          <li>responsive web dev</li>
-        </ul>
+      <div class="three columns">
+        <div class="date-from-to">
+          {{ item.date.from }}&ndash;{{ item.date.to }}
+        </div>
+        <div class="location">
+          {{ item.location }}
+        </div>
+        <div class="skill-summary">
+          <p>{{ item.skillSummary.join(', ') }}</p>
+        </div>
       </div>
-      <div class="nine columns history-right">
-        <ul>
-          <li>Implemented several AngularJS/Twitter Bootstrap SPAs</li>
-          <li>Wrote comprehensive Grunt scripts for the build process, including JSHint, JSCS,
-    LESS compilation, unit (Karma) &amp; e2e (Protractor) testing</li>
-          <li>Worked closely with API developers to define and agree REST API contracts</li>
-          <li>Developed a service-mocking app in ExpressJS to allow stackless development</li>
-          <li>Involved in daily client interaction, and presented weekly client updates</li>
-        </ul>
+      <div class="nine columns">
+        <h3>
+          <a href="{{ item.employer.url }}" target="_blank">{{ item.employer.name }}</a>
+        </h3>
+        <div class="role-title">{{ item.roleTitle }}</div>
+        <div class="description">
+          <p ng-repeat="para in item.description">{{ para }}</p>
+        </div>
       </div>
-
     </div>
 
   </div>
@@ -50,4 +36,3 @@
 <h2>Education</h2>
 
 <h2>Other Interests</h2>
-
