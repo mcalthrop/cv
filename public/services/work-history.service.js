@@ -9,6 +9,8 @@ function WorkHistoryService($http) {
   };
 }
 
+WorkHistoryService.$inject = ['$http'];
+
 angular
   .module('matt-calthrop-cv')
-  .factory('WorkHistoryService', ['$http', WorkHistoryService]);
+  .factory('WorkHistoryService', WorkHistoryService);

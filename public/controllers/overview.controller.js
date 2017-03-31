@@ -16,6 +16,8 @@ function OverviewController(OverviewService) {
   init();
 }
 
+OverviewController.$inject = ['OverviewService'];
+
 angular
   .module('matt-calthrop-cv')
-  .controller('OverviewController', ['OverviewService', OverviewController]);
+  .controller('OverviewController', OverviewController);

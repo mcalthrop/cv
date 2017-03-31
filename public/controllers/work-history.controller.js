@@ -16,6 +16,8 @@ function WorkHistoryController(WorkHistoryService) {
   init();
 }
 
+WorkHistoryController.$inject = ['WorkHistoryService'];
+
 angular
   .module('matt-calthrop-cv')
-  .controller('WorkHistoryController', ['WorkHistoryService', WorkHistoryController]);
+  .controller('WorkHistoryController', WorkHistoryController);
