@@ -9,6 +9,8 @@ function OverviewService($http) {
   };
 }
 
+OverviewService.$inject = ['$http'];
+
 angular
   .module('matt-calthrop-cv')
-  .factory('OverviewService', ['$http', OverviewService]);
+  .factory('OverviewService', OverviewService);
