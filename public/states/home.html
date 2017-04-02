@@ -23,7 +23,7 @@
     <div class="row">
       <div class="three columns">
         <div class="date-from-to">
-          {{ item.date.from }}&ndash;{{ item.date.to }}
+          {{ item.dateFrom }}&ndash;{{ item.dateTo }}
         </div>
         <div class="location">
           {{ item.location }}
@@ -34,7 +34,7 @@
       </div>
       <div class="nine columns">
         <h3>
-          <a href="{{ item.employer.url }}" target="_blank">{{ item.employer.name }}</a>
+          <a href="{{ item.employerUrl }}" target="_blank">{{ item.employerName }}</a>
         </h3>
         <div class="role-title">{{ item.roleTitle }}</div>
         <div class="description">

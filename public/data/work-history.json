@@ -1,14 +1,10 @@
 [
   {
     "roleTitle": "Instructor, Web Development Immersive",
-    "employer": {
-      "name": "General Assembly",
-      "url": "http://ga.co/"
-    },
-    "date": {
-      "from": "Sep 2016",
-      "to": "Dec 2016"
-    },
+    "employerName": "General Assembly",
+    "employerUrl": "http://ga.co/",
+    "dateFrom": "Sep 2016",
+    "dateTo": "Dec 2016",
     "location": "London, UK",
     "skillSummary": [
       "AngularJS", "Bootstrap", "ES6", "NodeJS", "Express", "Mongo", "Mongoose", "CircleCI",
@@ -22,14 +18,10 @@
   },
   {
     "roleTitle": "Senior Front-end Consultant",
-    "employer": {
-      "name": "OpenCredo",
-      "url": "https://opencredo.com/"
-    },
-    "date": {
-      "from": "Apr 2013",
-      "to": "Sep 2016"
-    },
+    "employerName": "OpenCredo",
+    "employerUrl": "https://opencredo.com/",
+    "dateFrom": "Apr 2013",
+    "dateTo": "Sep 2016",
     "location": "London, UK",
     "skillSummary": [
       "AngularJS", "Bootstrap", "Grunt", "Karma", "Protractor", "LESS CSS3", "HTML5",
