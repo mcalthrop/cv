@@ -1,24 +1,21 @@
-<h1>Matt Calthrop: CV</h1>
+<div ng-controller="HomeController as home">
 
-<div ng-controller="OverviewController as overview">
+  <h1>Matt Calthrop: CV</h1>
+
   <div class="row">
     <div class="three columns">
       <h2>Overview</h2>
     </div>
     <div class="nine columns">
       <div class="overview">
-        <p ng-repeat="para in overview.data">{{ para }}</p>
+        <p ng-repeat="para in home.overview[0].paragraphs">{{ para }}</p>
       </div>
     </div>
   </div>
 
-</div>
-
-<div ng-controller="WorkHistoryController as workHistory">
-
   <h2>Work History</h2>
 
-  <div ng-repeat="item in workHistory.data" class="work-history">
+  <div ng-repeat="item in home.workHistory" class="work-history">
 
     <div class="row">
       <div class="three columns">
@@ -45,6 +42,8 @@
 
   </div>
 
-<h2>Education</h2>
+  <h2>Education</h2>
 
-<h2>Other Interests</h2>
+  <h2>Other Interests</h2>
+
+</div>
