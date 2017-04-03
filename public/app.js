@@ -1,4 +1,4 @@
-function mainRouter($stateProvider, $urlRouterProvider) {
+function MainRouter($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
@@ -8,7 +8,8 @@ function mainRouter($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 }
+MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 angular
   .module('matt-calthrop-cv', ['ui.router'])
-  .config(mainRouter);
+  .config(MainRouter);
