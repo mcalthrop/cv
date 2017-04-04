@@ -8,34 +8,34 @@
     </div>
     <div class="nine columns">
       <div class="overview">
-        <p ng-repeat="para in home.overview[0].paragraphs">{{ para }}</p>
+        <p ng-repeat="para in home.cv.overview">{{ para }}</p>
       </div>
     </div>
   </div>
 
   <h2>Work History</h2>
 
-  <div ng-repeat="item in home.workHistory" class="work-history">
+  <div ng-repeat="item in home.cv.workHistory" class="work-history">
 
     <div class="row">
       <div class="three columns">
         <div class="date-from-to">
-          {{ item.dateFrom }}&ndash;{{ item.dateTo }}
+          {{ item.fields.dateFrom }}&ndash;{{ item.fields.dateTo }}
         </div>
         <div class="location">
-          {{ item.location }}
+          {{ item.fields.location }}
         </div>
         <div class="skill-summary">
-          <p>{{ item.skillSummary.join(', ') }}</p>
+          <p>{{ item.fields.skillSummary.join(', ') }}</p>
         </div>
       </div>
       <div class="nine columns">
         <h3>
-          <a href="{{ item.employerUrl }}" target="_blank">{{ item.employerName }}</a>
+          <a href="{{ item.fields.employerUrl }}" target="_blank">{{ item.fields.employerName }}</a>
         </h3>
-        <div class="role-title">{{ item.roleTitle }}</div>
+        <div class="role-title">{{ item.fields.roleTitle }}</div>
         <div class="description">
-          <p ng-repeat="para in item.description">{{ para }}</p>
+          <p ng-repeat="para in item.fields.description">{{ para }}</p>
         </div>
       </div>
     </div>

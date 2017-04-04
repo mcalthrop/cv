@@ -9,9 +9,7 @@ function ContentfulModel() {
   const model = {
     contentTypes: {},
     entries: [],
-    getEntries: () => getEntries(),
-    getOverview: () => getEntriesByType('overview'),
-    getWorkHistory: () => getEntriesByType('workHistory').sort(sortWorkHistory)
+    getEntries
   };
 
   function createClient() {
@@ -22,22 +20,16 @@ function ContentfulModel() {
   }
 
   function getEntries() {
-    return client.getEntries().then(
+    const config = {
+      content_type: 'cv'
+    };
+
+    return client.getEntries(config).then(
       entries => model.entries = entries.items,
       errorResponse => {
         console.warn('ContentfulModel: could not retrieve entries:', errorResponse);
       }
     );
-  }
-
-  function getEntriesByType(contentType) {
-    return model.entries
-      .filter(entry => entry.sys.contentType.sys.id === contentType)
-      .map(entry => entry.fields);
-  }
-
-  function sortWorkHistory(a, b) {
-    return (a.startDate < b.startDate) ? 1 : -1;
   }
 
   function init() {

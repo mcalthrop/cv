@@ -2,8 +2,7 @@ function HomeController(ContentfulModel) {
   const controller = this;
 
   function init() {
-    controller.overview = ContentfulModel.getOverview();
-    controller.workHistory = ContentfulModel.getWorkHistory();
+    controller.cv = ContentfulModel.entries[0].fields;
   }
 
   init();
