@@ -8,14 +8,14 @@
     </div>
     <div class="nine columns">
       <div class="overview">
-        <p ng-repeat="para in home.cv.overview">{{ para }}</p>
+        <p ng-repeat="para in home.cv.overview track by $index">{{ para }}</p>
       </div>
     </div>
   </div>
 
   <h2>Work History</h2>
 
-  <div ng-repeat="item in home.cv.workHistory" class="work-history">
+  <div ng-repeat="item in home.cv.workHistory track by $index" class="work-history">
 
     <div class="row">
       <div class="three columns">
@@ -35,7 +35,7 @@
         </h3>
         <div class="role-title">{{ item.fields.roleTitle }}</div>
         <div class="description">
-          <p ng-repeat="para in item.fields.description">{{ para }}</p>
+          <p ng-repeat="para in item.fields.description track by $index">{{ para }}</p>
         </div>
       </div>
     </div>
