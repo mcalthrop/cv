@@ -23,7 +23,7 @@ p {
 /* ----------- work history ----------- */
 
 .work-history .row {
-  margin-top: 1.0rem;
+  margin-top: 1.6rem;
 }
 
 .work-history h3 {
@@ -51,4 +51,9 @@ p {
 
 .work-history .role-title {
   font-weight: bolder;
+  margin-top: -3px;
+}
+
+.work-history .description {
+  margin-top: 6px;
 }
