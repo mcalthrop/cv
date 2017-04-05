@@ -5,7 +5,6 @@ function ContentfulModel() {
     contentDelivery: '2b0af88ae087bef7c88668c9a00cd778656e22d726598b797a246415c9176eaf'
   };
   const model = {
-    contentTypes: {},
     entries: [],
     getEntries
   };
@@ -24,10 +23,8 @@ function ContentfulModel() {
     };
 
     return client.getEntries(config).then(
-      entries => model.entries = entries.items,
-      errorResponse => {
-        console.warn('ContentfulModel: could not retrieve entries:', errorResponse);
-      }
+      successResponse => model.entries = successResponse.items,
+      errorResponse => console.warn('ContentfulModel: could not retrieve entries:', errorResponse)
     );
   }
 
