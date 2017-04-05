@@ -14,15 +14,21 @@ p {
   line-height: 1.7rem;
 }
 
-/* ----------- overview ----------- */
+.cv {
+  margin-bottom: 5rem;
+}
 
-.overview {
+.cv .row {
+  margin-top: 1.6rem;
+}
+
+.right-column {
   margin-top: 2.0rem;
 }
 
 /* ----------- work history ----------- */
 
-.work-history .row {
+.row.work-history {
   margin-top: 1.6rem;
 }
 
