@@ -8,7 +8,7 @@
     </div>
     <div class="nine columns">
       <div class="overview">
-        <p ng-repeat="para in home.cv.overview track by $index">{{ para }}</p>
+        <p ng-repeat="overview in home.cv.overview track by $index">{{ overview.fields.para }}</p>
       </div>
     </div>
   </div>
@@ -45,5 +45,7 @@
   <h2>Education</h2>
 
   <h2>Other Interests</h2>
+
+  <p ng-repeat="interest in home.cv.interests">{{ interest.fields.para }}</p>
 
 </div>
