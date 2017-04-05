@@ -1,5 +1,3 @@
-/* global contentful */
-
 function ContentfulModel() {
   let client;
   const spaceId = '8nmbnmef5jq7';
