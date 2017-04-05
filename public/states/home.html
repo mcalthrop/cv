@@ -44,8 +44,16 @@
 
   <h2>Education</h2>
 
-  <h2>Other Interests</h2>
+  <div class="row">
+    <div class="three columns">
+      <h2>Other Interests</h2>
+    </div>
+    <div class="nine columns">
+      <div class="overview">
+        <p ng-repeat="interest in home.cv.interests">{{ interest.fields.para }}</p>
+      </div>
+    </div>
+  </div>
 
-  <p ng-repeat="interest in home.cv.interests">{{ interest.fields.para }}</p>
 
 </div>
