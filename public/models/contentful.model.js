@@ -19,7 +19,8 @@ function ContentfulModel() {
 
   function getEntries() {
     const config = {
-      content_type: 'cv'
+      content_type: 'cv',
+      include: 2
     };
 
     return client.getEntries(config).then(

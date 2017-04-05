@@ -35,7 +35,7 @@
         </h3>
         <div class="role-title">{{ item.fields.roleTitle }}</div>
         <div class="description">
-          <p ng-repeat="para in item.fields.description track by $index">{{ para }}</p>
+          <p ng-repeat="responsibility in item.fields.responsibilities track by $index">{{ responsibility.fields.para }}</p>
         </div>
       </div>
     </div>
