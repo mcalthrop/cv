@@ -22,10 +22,6 @@ p {
   margin-top: 1.6rem;
 }
 
-.right-column {
-  margin-top: 2.0rem;
-}
-
 /* ----------- work history ----------- */
 
 .row.work-history {
@@ -42,10 +38,6 @@ p {
   margin: 3px 0;
   line-height: 1.5rem;
   font-size: 1.4rem;
-}
-
-.work-history .skill-summary {
-  margin-top: 1.0rem;
 }
 
 .work-history .skill-summary p {

@@ -3,50 +3,55 @@
   <h1>Matt Calthrop: CV</h1>
 
   <div class="row">
-    <div class="three columns">
+    <div class="twelve columns">
       <h2>Overview</h2>
     </div>
-    <div class="nine columns">
-      <div class="right-column">
-        <p ng-repeat="overview in home.cv.overview track by $index">
-          {{ overview.fields.para }}
-        </p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <p ng-repeat="overview in home.cv.overview track by $index">
+        {{ overview.fields.para }}
+      </p>
     </div>
   </div>
 
   <h2>Work History</h2>
 
   <div ng-repeat="item in home.cv.workHistory track by $index" class="row work-history">
-    <div class="three columns">
-      <div class="date-from-to">
-        {{ item.fields.dateFrom }}&ndash;{{ item.fields.dateTo }}
-      </div>
-      <div class="location">
-        {{ item.fields.location }}
-      </div>
-      <div class="skill-summary">
-        <p>{{ item.fields.skillSummary.join(', ') }}</p>
-      </div>
-    </div>
-    <div class="nine columns">
+    <div class="twelve columns">
       <h3>
-        <a href="{{ item.fields.employerUrl }}" target="_blank">{{ item.fields.employerName }}</a>
+        <span
+          ng-if="!item.fields.employerUrl">{{ item.fields.employerName }}</span>
+        <a
+          ng-if="item.fields.employerUrl"
+          href="{{ item.fields.employerUrl }}"
+          target="_blank">{{ item.fields.employerName }}</a>
       </h3>
       <div class="role-title">{{ item.fields.roleTitle }}</div>
+      <div class="location">
+        {{ item.fields.location }} &ndash;
+        <span class="date-from-to">{{ item.fields.dateFrom }}-{{ item.fields.dateTo }}</span>
+      </div>
       <div class="description">
         <p ng-repeat="responsibility in item.fields.responsibilities track by $index">
           {{ responsibility.fields.para }}
         </p>
       </div>
     </div>
+    <div class="twelve columns">
+      <div class="skill-summary">
+        <p>{{ item.fields.skillSummary.join(' &bull; ') }}</p>
+      </div>
+    </div>
   </div>
 
   <div class="row">
-    <div class="three columns">
+    <div class="twelve columns">
       <h2>Education</h2>
     </div>
-    <div class="nine columns right-column">
+  </div>
+  <div class="row">
+    <div class="twelve columns">
       <p ng-repeat="education in home.cv.education track by $index">
         {{ education.fields.para }}
       </p>
@@ -54,10 +59,12 @@
   </div>
 
   <div class="row">
-    <div class="three columns">
+    <div class="twelve columns">
       <h2>Other Interests</h2>
     </div>
-    <div class="nine columns right-column">
+  </div>
+  <div class="row">
+    <div class="twelve columns">
       <p ng-repeat="interest in home.cv.interests track by $index">
         {{ interest.fields.para }}
       </p>
