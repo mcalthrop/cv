@@ -27,7 +27,6 @@
           ng-if="home.canDisplayOnTheWebItem(item)"
           ng-repeat="item in home.cv.onTheWeb track by $index">
           <a href="{{ item.fields.url }}" target="_blank">{{ item.fields.linkText }}</a>
-          ({{ item.fields.description }})
         </li>
       </ul>
     </div>

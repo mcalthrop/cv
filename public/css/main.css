@@ -23,7 +23,7 @@ p {
 }
 
 .cv ul {
-  list-style-type: disc;
+  list-style: none;
   margin-bottom: 0;
 }
 
