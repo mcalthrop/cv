@@ -15,8 +15,29 @@
     </div>
   </div>
 
-  <h2>Work History</h2>
+  <div class="row">
+    <div class="twelve columns">
+      <h2>On the web</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <ul>
+        <li
+          ng-if="home.canDisplayOnTheWebItem(item)"
+          ng-repeat="item in home.cv.onTheWeb track by $index">
+          <a href="{{ item.fields.url }}" target="_blank">{{ item.fields.linkText }}</a>
+          ({{ item.fields.description }})
+        </li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="twelve columns">
+      <h2>Work history</h2>
+    </div>
+  </div>
   <div ng-repeat="item in home.cv.workHistory track by $index" class="row work-history">
     <div class="twelve columns">
       <h3>

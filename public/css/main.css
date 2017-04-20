@@ -22,6 +22,15 @@ p {
   margin-top: 1.6rem;
 }
 
+.cv ul {
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+
+.cv li {
+  margin-bottom: 0;
+}
+
 /* ----------- work history ----------- */
 
 .row.work-history {
