@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mcalthrop/cv.svg?branch=master)](https://travis-ci.org/mcalthrop/cv)
+
 # Matt Calthrop: CV
 
 _Source code for my online CV_
@@ -14,6 +16,7 @@ It uses the following features:
 - [AngularJS](https://angularjs.org/) as the SPA framework
 - [SkeletonCSS](http://getskeleton.com/) for the design framework
 - [Contentful](https://www.contentful.com/) for hosting the content
+- [Travis](https://travis-ci.org/mcalthrop/cv) for CI testing
 - [Heroku](https://www.heroku.com/) for deployment and hosting
 
 ## Setup
