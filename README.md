@@ -49,7 +49,7 @@ $ yarn nodemon
 
 To check if the API is running, browse to:
 
-[localhost:4001/api](http://localhost:7000/)
+[localhost:7000/api](http://localhost:7000/)
 
 ## Tests
 
