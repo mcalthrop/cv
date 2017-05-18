@@ -19,6 +19,8 @@ It uses the following features:
 - [Travis](https://travis-ci.org/mcalthrop/cv) for CI testing
 - [Heroku](https://www.heroku.com/) for deployment and hosting
 
+You can fork this repo, and run it locally yourself. Following are instructions for setting it up and running it.
+
 ## Setup
 
 ### Install yarn
