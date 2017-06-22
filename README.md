@@ -78,3 +78,7 @@ And to auto-correct any errors that can be corrected:
 ``` sh
 $ yarn lint:fix
 ```
+
+## License
+
+[MIT](LICENSE)
