@@ -4,7 +4,7 @@
   "main": "server.js",
   "repository": "git@github.com:mcalthrop/matt-calthrop-cv.git",
   "engines": {
-    "node": "6.8.0",
+    "node": "6.11.1",
     "npm": ">= 3"
   },
   "scripts": {
