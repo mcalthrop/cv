@@ -6,7 +6,7 @@ _Old source code for my online CV &ndash; see [github.com/mcalthrop/cv-react](ht
 
 ## Overview
 
-This codebase contains the source for my online CV: [cv.mattcalthrop.com](http://cv.mattcalthrop.com/).
+This codebase contains the source for the AngularJS version of my online CV: [matt-calthrop-cv.herokuapp.com/](http://matt-calthrop-cv.herokuapp.com/).
 
 It uses the following features:
 
