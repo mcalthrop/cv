@@ -2,7 +2,7 @@
 
 # Matt Calthrop: CV
 
-_Source code for my online CV_
+_Old source code for my online CV &ndash; see [github.com/mcalthrop/cv-react](https://github.com/mcalthrop/cv-react#readme) for latest_
 
 ## Overview
 
